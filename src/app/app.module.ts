@@ -1,21 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ProfileTeerawatComponent } from './profile/profile-teerawat/profile-teerawat.component';
-import { RouterModule } from '@angular/router';
+import { ProfilePanuwatComponent } from './profile/profile-panuwat/profile-panuwat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileTeerawatComponent
+    ProfileTeerawatComponent,
+    ProfilePanuwatComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/profile', pathMatch: 'full' },
       { path: 'profile/Teerawat', component: ProfileTeerawatComponent },
-     ]),
+      { path: 'profile/panuwat', component: ProfilePanuwatComponent },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
