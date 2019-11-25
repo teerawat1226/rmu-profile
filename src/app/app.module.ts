@@ -5,12 +5,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProfileTeerawatComponent } from './profile/profile-teerawat/profile-teerawat.component';
 import { ProfilePanuwatComponent } from './profile/profile-panuwat/profile-panuwat.component';
+import { ProfileWeerapolComponent } from './profile/profile-weerapol/profile-weerapol.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileTeerawatComponent,
-    ProfilePanuwatComponent
+    ProfilePanuwatComponent,
+    ProfileWeerapolComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { ProfilePanuwatComponent } from './profile/profile-panuwat/profile-panuw
       { path: '', redirectTo: '/profile', pathMatch: 'full' },
       { path: 'profile/Teerawat', component: ProfileTeerawatComponent },
       { path: 'profile/panuwat', component: ProfilePanuwatComponent },
-    ]),
+      { path: 'profile/weerapol', component: ProfileWeerapolComponent },
+     ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
