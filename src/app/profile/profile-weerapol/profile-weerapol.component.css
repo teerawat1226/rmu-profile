@@ -17,3 +17,8 @@
   .toolbar #twitter-logo:hover {
     opacity: 0.8;
   }
+
+  .test {
+    margin-top: 24%;
+    margin-left: 17%;
+  }
