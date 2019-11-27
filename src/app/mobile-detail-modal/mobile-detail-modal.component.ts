@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mobile-detail-modal.component.scss']
 })
 export class MobileDetailModalComponent implements OnInit {
-  // public customerMobileDetail: CustomerMobileDetail;
+  public customerMobileDetail: any ={
+    mobileNo: '0887440454'
+  };
   constructor() { }
 
   ngOnInit(): void {
