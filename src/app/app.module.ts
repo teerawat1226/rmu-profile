@@ -7,6 +7,8 @@ import { ProfileTeerawatComponent } from './profile/profile-teerawat/profile-tee
 import { ProfilePanuwatComponent } from './profile/profile-panuwat/profile-panuwat.component';
 import { ProfileWeerapolComponent } from './profile/profile-weerapol/profile-weerapol.component';
 import { HomeComponent } from './home/home.component';
+import { RoutingListComponent } from './routing-list/routing-list-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -14,14 +16,16 @@ import { HomeComponent } from './home/home.component';
     ProfileTeerawatComponent,
     ProfilePanuwatComponent,
     ProfileWeerapolComponent,
-    HomeComponent
+    HomeComponent,
+    RoutingListComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/profile', pathMatch: 'full' },
       { path: 'profile', component: HomeComponent },
-      { path: 'profile/Teerawat', component: ProfileTeerawatComponent },
+      { path: 'profile/teerawat', component: ProfileTeerawatComponent },
       { path: 'profile/panuwat', component: ProfilePanuwatComponent },
       { path: 'profile/weerapol', component: ProfileWeerapolComponent },
      ]),
