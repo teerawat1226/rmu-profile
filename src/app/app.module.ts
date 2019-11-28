@@ -28,6 +28,7 @@ import { HomePageComponent } from './home-page/home-page.component';
       { path: 'profile/teerawat', component: ProfileTeerawatComponent },
       { path: 'profile/panuwat', component: ProfilePanuwatComponent },
       { path: 'profile/weerapol', component: ProfileWeerapolComponent },
+      { path: 'homepage', component: HomePageComponent },
      ]),
   ],
   providers: [],
