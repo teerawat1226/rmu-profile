@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoutingListComponent } from './routing-list-page.component';
+import { RoutingListComponent } from './routing-list.component';
 
-describe('HomeComponent', () => {
+describe('RoutingListComponent', () => {
   let component: RoutingListComponent;
   let fixture: ComponentFixture<RoutingListComponent>;
 
