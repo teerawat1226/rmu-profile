@@ -9,6 +9,8 @@ import { ProfileWeerapolComponent } from './profile/profile-weerapol/profile-wee
 import { HomeComponent } from './home/home.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RoutingListComponent } from './routing-list/routing-list.component';
+import { SendDataComponent } from './send-data/send-data.component';
+import { SharedService } from './shared/reserve-stock.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { RoutingListComponent } from './routing-list/routing-list.component';
     ProfileWeerapolComponent,
     HomeComponent,
     MainPageComponent,
-    RoutingListComponent
+    RoutingListComponent,
+    SendDataComponent
   ],
   imports: [
     BrowserModule,
@@ -28,10 +31,13 @@ import { RoutingListComponent } from './routing-list/routing-list.component';
       { path: 'profile/teerawat', component: ProfileTeerawatComponent },
       { path: 'profile/panuwat', component: ProfilePanuwatComponent },
       { path: 'profile/weerapol', component: ProfileWeerapolComponent },
-      { path: 'homepage', component: MainPageComponent },
+      { path: 'profile/homepage', component: MainPageComponent },
+      { path: 'profile/send', component: SendDataComponent },
     ]),
   ],
-  providers: [],
+  providers: [
+    SharedService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
