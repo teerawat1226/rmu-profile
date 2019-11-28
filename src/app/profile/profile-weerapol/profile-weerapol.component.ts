@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileWeerapolComponent implements OnInit {
 
-  public date = {
+  public title = 'Profile';
+  public profile = {
     idCardNo: '1461300151867',
     imageReadSmartCard: '14613XXXXX867',
     idCardType: 'บัตรประชาชน',
@@ -36,6 +37,26 @@ export class ProfileWeerapolComponent implements OnInit {
     issueDate: '-',
     expireDate: '-',
   };
+  public skills = {
+    frontEnd: {
+      css: 'css',
+      angular: 'angular'
+    },
+    backEnd: {
+      node: 'node.js',
+      ts: '.ts'
+    },
+    tools: {
+      git: 'github',
+      node: 'node.js'
+    }
+  };
+  public nameEn: string;
+  public nameTh: string;
+  public address: string;
+  public frontEnd: string;
+  public backEnd: string;
+  public tools: string;
   public name: string;
 
   constructor() { }
@@ -45,7 +66,13 @@ export class ProfileWeerapolComponent implements OnInit {
   }
 
   xxx() {
-    this.name = this.date.titleName + this.date.firstName + " " + this.date.lastName
+    this.nameEn = this.profile.titleNameEn + this.profile.firstNameEn + ' ' + this.profile.lastNameEn;
+    this.nameTh = this.profile.titleName + this.profile.firstName + ' ' + this.profile.lastName;
+    this.address = this.profile.homeNo + 'หมู่' + this.profile.moo + ' บ้าน' + this.profile.mooBan + ' ตำบล' +
+      this.profile.tumbol + ' อำเภอ' + this.profile.amphur + ' จังหวัด' + this.profile.province + ' ' + this.profile.zipCode;
+    this.frontEnd = this.skills.frontEnd.angular + ', ' + this.skills.frontEnd.css;
+    this.backEnd = this.skills.backEnd.node + ', ' + this.skills.backEnd.ts;
+    this.tools = this.skills.tools.git + ', ' + this.skills.tools.node;
   }
 
 }

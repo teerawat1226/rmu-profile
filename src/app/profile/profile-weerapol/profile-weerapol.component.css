@@ -1,3 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.widthimage{
+    width:40%;
+    
+}
+
 .toolbar {
     height: 60px;
     margin: -8px;
